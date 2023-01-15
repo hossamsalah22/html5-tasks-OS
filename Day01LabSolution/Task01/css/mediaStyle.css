@@ -1,0 +1,26 @@
+.main-container:hover {
+	transform: none;
+}
+
+.text-container {
+	width: 25%;
+	column-count: 1;
+	column-rule: 2px dotted red;
+	column-gap: 20px;
+}
+
+img {
+	margin-top: 10px;
+	transform: rotate(-10deg);
+	transition: all 2s;
+}
+
+img:active {
+	border: 2px dotted red;
+	transform: rotate(0);
+}
+
+img:hover {
+	border: 2px dotted red;
+	transform: rotate(0);
+}

@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.main-container {
+	display: flex;
+	width: 70%;
+	height: 490px;
+	margin: 5% auto;
+	overflow: hidden;
+	background-image: radial-gradient(rgba(250, 250, 250) 50%, rgb(66, 246, 231));
+	box-shadow: 5px 5px 50px rgb(232, 0, 163);
+	border: 1px solid rgb(234, 234, 4);
+	border-radius: 15px;
+	padding: 1%;
+	text-align: center;
+	transition: all 2s;
+}
+
+.main-container:hover {
+	transform: skew(15deg);
+	box-shadow: 10px 10px 50px rgb(66, 246, 231);
+}
+
+.main-container:active {
+	transform: scale(0.5);
+}
+
+.text-container {
+	width: 35%;
+	height: 95%;
+	margin-right: 2%;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	overflow: auto;
+	resize: both;
+	column-count: 3;
+	column-rule: 2px dotted red;
+	column-gap: 20px;
+	background-image: radial-gradient(rgba(250, 250, 250) 50%, rgba(49, 218, 26));
+	transition: all 2s;
+}
+
+.text-container:hover {
+	text-decoration: underline;
+}
+
+mark {
+	transition: all 2s;
+}
+
+mark:hover {
+	background-color: red;
+}
+mark:active {
+	background-color: rgb(166, 214, 184);
+}
+
+.pic-container {
+	width: 60%;
+	height: 95%;
+	background-image: radial-gradient(rgba(250, 250, 250) 50%, rgb(66, 246, 231));
+	border: 1px solid rgb(4, 12, 234);
+	border-radius: 5px;
+	overflow: auto;
+	resize: both;
+	padding: 5px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 8px rgb(232, 0, 163);
+	transition: all 2s;
+}
+
+img:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 8px rgb(243, 219, 3);
+}
+
+img:active {
+	transform: scale(1.7);
+}

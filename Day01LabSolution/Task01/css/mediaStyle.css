@@ -3,10 +3,8 @@
 }
 
 .text-container {
-	width: 25%;
-	column-count: 1;
-	column-rule: 2px dotted red;
-	column-gap: 20px;
+	max-width: 25%;
+	columns: 1;
 }
 
 img {

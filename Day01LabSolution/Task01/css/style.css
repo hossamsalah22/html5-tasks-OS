@@ -36,8 +36,8 @@
 	overflow: auto;
 	resize: both;
 	column-count: 3;
-	column-rule: 2px dotted red;
-	column-gap: 20px;
+	column-rule: 2px solid red;
+	column-gap: 10px;
 	background-image: radial-gradient(rgba(250, 250, 250) 50%, rgba(49, 218, 26));
 	transition: all 2s;
 }
@@ -54,7 +54,7 @@ mark:hover {
 	background-color: red;
 }
 mark:active {
-	background-color: rgb(166, 214, 184);
+	background-color: rgb(30, 139, 72);
 }
 
 .pic-container {

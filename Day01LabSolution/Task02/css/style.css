@@ -42,6 +42,11 @@ button:hover {
 	animation: move 3s infinite;
 }
 
+.pause {
+	animation-play-state: paused;
+	transform: scale(1.2);
+}
+
 @keyframes move {
 	0% {
 		top: 50px;

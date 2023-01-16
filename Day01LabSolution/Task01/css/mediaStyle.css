@@ -17,8 +17,9 @@ img {
 
 img:active {
 	border: 4px dotted red;
+	transform: rotate(0);
 }
 
 img:hover {
-	transform: rotate(0);
+	transform: rotate(0), scale(1.2);
 }

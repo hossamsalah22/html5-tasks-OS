@@ -16,14 +16,17 @@ button {
 	padding: 20px;
 	margin-top: 20px;
 	margin-left: 10px;
-	background-color: #f86;
+	background-color: aqua;
 	border-radius: 50%;
-	border: 1px solid black;
+	border: none;
+	transition: all 0.7s;
 }
 
 button:hover {
 	cursor: pointer;
-	background-color: aqua;
+	background-color: rgb(15, 49, 49);
+	box-shadow: 10px 10px 20px rgb(5, 70, 78);
+	color: aqua;
 }
 
 #box {
@@ -31,18 +34,18 @@ button:hover {
 	height: 150px;
 	background-color: #000;
 	top: 50px;
-	left: 20px;
+	left: 5%;
 	position: relative;
 }
 
 .start {
-	animation: move 2s infinite;
+	animation: move 3s infinite;
 }
 
 @keyframes move {
 	0% {
 		top: 50px;
-		left: 20px;
+		left: 5%;
 	}
 	25% {
 		top: 50px;
@@ -56,11 +59,11 @@ button:hover {
 	}
 	75% {
 		top: 350px;
-		left: 20px;
+		left: 5%;
 		background-color: rgb(255, 222, 11);
 	}
 	98% {
 		top: 50px;
-		left: 20px;
+		left: 5%;
 	}
 }

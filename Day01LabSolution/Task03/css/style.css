@@ -1,0 +1,7 @@
+#flag {
+	width: 900px;
+	height: 500px;
+	margin: 10px auto;
+	background: url(../images/egypt-flag.jpg) no-repeat center center, linear-gradient(red 0% 33%, white 33% 66%, black 66% 99%);
+	background-size: 100px auto, cover;
+}

@@ -1,0 +1,23 @@
+.main-container:hover {
+	transform: none;
+}
+
+.text-container {
+	max-width: 25%;
+	columns: 1;
+}
+
+img {
+	margin-top: 10px;
+	transform: rotate(10deg);
+	transition: all 2s;
+}
+
+img:active {
+	border: 4px dotted red;
+	transform: rotate(0);
+}
+
+img:hover {
+	transform: rotate(0), scale(1.2);
+}

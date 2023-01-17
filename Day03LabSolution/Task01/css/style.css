@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+section {
+	background-color: #09182d;
+	padding: 5px;
+	border-radius: 10px;
+}
+#mainwrapper {
+	width: 80vw;
+	height: 80vh;
+	margin: 10px auto;
+	display: flex;
+}
+#mainwrapper > section {
+	margin: 5px;
+}
+#controlswrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+#videowrapper {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#myvideo {
+	width: 40vw;
+	height: 40vh;
+	transition: all 2s;
+}
+
+#myvideo:hover {
+	width: 60vw;
+	height: 60vh;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+button:hover {
+	transform: scale(1.1);
+	transform: rotate(360deg);
+	transition: 2s;
+	background-color: rgb(26, 105, 165);
+}

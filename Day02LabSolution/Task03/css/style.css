@@ -12,7 +12,6 @@
 	grid-template-areas:
 		"aside navList"
 		"aside main";
-	overflow: hidden;
 }
 
 /* Right Side */
@@ -78,7 +77,6 @@ aside > div:last-child img {
 /* Left Side OF Page */
 nav {
 	background-color: rgb(211, 200, 142);
-	height: 3.5rem;
 	display: flex;
 	align-items: center;
 }
@@ -98,14 +96,12 @@ nav ul > li {
 
 nav a {
 	text-decoration: none;
-	padding: 0.4em;
 	color: white;
 	transition: all 1s;
 	border-radius: 5%;
 }
 nav a:hover {
 	background-color: #8b8a7fd0;
-	/* color: black; */
 }
 
 main {
@@ -117,11 +113,16 @@ main {
 main img {
 	width: 100%;
 	height: 100%;
-	opacity: 0.6;
+	opacity: 0.5;
 	transition: all 1s;
 }
 main img:hover {
 	opacity: 1;
-	transform: scale(1.2);
-	z-index: 1;
+}
+
+@media all and (max-width: 600px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
 }

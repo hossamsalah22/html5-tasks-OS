@@ -1,0 +1,70 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.main-container {
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	justify-content: space-between;
+	background-color: orangered;
+	margin: 50px auto;
+	border-radius: 1em;
+	padding: 2rem;
+}
+
+#btns {
+	min-height: 1rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	text-align: center;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: orangered;
+}
+
+button {
+	height: 40px;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+#mymap {
+	padding: 0 1rem;
+	margin-top: 2rem;
+	min-height: 60vh;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: orangered;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#info {
+	width: 80%;
+	margin: 0.5em auto;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#info > span {
+	margin: 0.5rem;
+	width: 100%;
+	text-align: center;
+}
+#info > span:nth-child(odd) {
+	font-weight: bold;
+	font-size: 1.5rem;
+	background-color: rgb(141, 106, 106);
+	color: black;
+}
+#info > span:nth-child(even) {
+	font-weight: bold;
+	font-size: 1.5rem;
+	background-color: lightgrey;
+	color: rgb(59, 70, 41);
+}

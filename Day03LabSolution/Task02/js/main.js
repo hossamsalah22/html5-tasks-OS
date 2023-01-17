@@ -1,9 +1,8 @@
 window.addEventListener("load", function () {
 	allImages = this.document.images;
-	imgCount = allImages.length;
 	topSec = this.document.getElementById("top");
 	bottom = this.document.getElementById("bottom");
-	for (let i = 0; i < imgCount; i++) {
+	for (let i = 0; i < allImages.length; i++) {
 		allImages[i].addEventListener("dragstart", startDrag);
 		allImages[i].addEventListener("dragend", endDrag);
 	}
@@ -22,7 +21,6 @@ window.addEventListener("load", function () {
 });
 
 function startDrag(e) {
-	e.dataTransfer.setData("myimg", e.target.outerHTML);
 	e.dataTransfer.setData("myimgId", e.target.id);
 }
 function endDrag(e) {
@@ -31,8 +29,7 @@ function endDrag(e) {
 function dropped(e) {
 	e.preventDefault();
 	bottom.appendChild(document.getElementById(e.dataTransfer.getData("myimgId")));
-	imgCount--;
-	if (imgCount < 1) {
+	if (topSec.childElementCount == 0) {
 		topSec.innerText = "Empty";
 		topSec.classList.add("emptysection");
 	}

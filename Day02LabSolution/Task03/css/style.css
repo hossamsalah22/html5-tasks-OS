@@ -12,16 +12,67 @@
 	grid-template-areas:
 		"aside navList"
 		"aside main";
+	overflow: hidden;
 }
 
 /* Right Side */
 aside {
-	background-color: #f1f1f1;
+	display: flex;
+	max-width: 100vw;
 	grid-area: aside;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
-aside img {
-	width: 100%;
+aside > img {
+	width: 50%;
+	margin-bottom: 1em;
+}
+
+aside ul:first-of-type {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+aside ul:first-of-type li {
+	list-style: none;
+	padding: 0.4em;
+}
+
+aside ul:first-of-type li > a {
+	text-decoration: none;
+	color: rgb(141, 128, 128);
+	font-weight: bolder;
+}
+
+aside > div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+	text-align: center;
+	max-width: 80%;
+}
+
+aside > div:first-of-type h1 {
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+}
+
+aside > div:first-of-type p {
+	font-weight: 800;
+	color: rgb(141, 128, 128);
+}
+
+aside > div:last-child {
+	text-align: center;
+	max-width: 80%;
+}
+
+aside > div:last-child img {
+	max-width: 20%;
 }
 
 /* Left Side OF Page */

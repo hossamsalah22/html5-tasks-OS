@@ -3,13 +3,13 @@ window.addEventListener("load", function () {
 		mainBranch = document.getElementsByTagName("span")[0];
 		mainBranch.classList.toggle("change");
 		if (this.checked) {
-			$(".locationSection div:not(:nth-child(1))").hide();
-			$(".SecondlocationSection div").hide();
-			$(".locationSection div span:nth-child(1)").css("color", "red");
+			$(".leftLocation div:not(:nth-child(1))").hide();
+			$(".rightLocation div").hide();
+			$(".leftLocation div span:nth-child(1)").css("color", "red");
 		} else {
-			$(".locationSection div:not(:nth-child(1))").show();
-			$(".SecondlocationSection div").show();
-			$(".locationSection div span:nth-child(1)").css("color", "gray");
+			$(".leftLocation div:not(:nth-child(1))").show();
+			$(".rightLocation div").show();
+			$(".leftLocation div span:nth-child(1)").css("color", "gray");
 		}
 	});
 
@@ -17,13 +17,13 @@ window.addEventListener("load", function () {
 		mainBranch = document.getElementsByTagName("span")[0];
 		mainBranch.classList.toggle("change");
 		if (this.checked) {
-			$(".locationSection div:nth-child(1)").hide();
-			$(".locationSection div span:nth-child(1)").css("color", "blue");
-			$(".SecondlocationSection div span").css("color", "blue");
+			$(".leftLocation div:nth-child(1)").hide();
+			$(".leftLocation div span:nth-child(1)").css("color", "blue");
+			$(".rightLocation div span").css("color", "blue");
 		} else {
-			$(".locationSection div:nth-child(1)").show();
-			$(".locationSection div span:nth-child(1)").css("color", "gray");
-			$(".SecondlocationSection div span").css("color", "gray");
+			$(".leftLocation div:nth-child(1)").show();
+			$(".leftLocation div span:nth-child(1)").css("color", "gray");
+			$(".rightLocation div span").css("color", "gray");
 		}
 	});
 }); //end of load function

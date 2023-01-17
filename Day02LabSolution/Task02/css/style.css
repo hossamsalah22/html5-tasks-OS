@@ -63,15 +63,10 @@ li > a:hover {
 	margin: 2rem 0;
 }
 
-.iti > h3 {
-	color: rgb(124, 15, 15);
-	font: bold brush-script;
-	padding: 15px;
+.iti img {
+	max-width: 40%;
 }
-.iti > h6 {
-	color: rgb(67, 67, 234);
-	font: 16px tahoma;
-}
+
 #main {
 	display: flex;
 	flex-direction: row;
@@ -81,8 +76,8 @@ li > a:hover {
 }
 
 #main img {
-	width: 40%;
-	height: 40%;
+	max-width: 25%;
+	max-height: 25%;
 }
 
 .mainSection {
@@ -106,15 +101,23 @@ li > a:hover {
 	margin-right: 0.1em;
 }
 
-/* #checkBranch {
-	flex-direction: row;
-	margin-left: 30px;
+#checkBranch {
+	display: flex;
+	width: 100vw;
 	font-size: 16px;
+	justify-content: center;
 }
-input[type="checkbox"] {
+#main-branch {
 	accent-color: red;
 	cursor: pointer;
-} */
+	margin-left: 20px;
+}
+
+#branch {
+	accent-color: blue;
+	cursor: pointer;
+	margin-left: 20px;
+}
 
 footer {
 	width: 100%;

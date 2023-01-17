@@ -1,0 +1,26 @@
+.main-container {
+	display: flex;
+	width: 1000px;
+	height: 250px;
+	background-color: rgb(60, 89, 96);
+	margin: 80px;
+	margin-left: 160px;
+	border-radius: 20px;
+}
+
+section {
+	width: 900px;
+	height: 180px;
+	margin: 20px;
+	margin-left: 30px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: rgb(44, 139, 154);
+	border: 1px solid rgb(255, 255, 255);
+}
+
+div {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 10px;
+}

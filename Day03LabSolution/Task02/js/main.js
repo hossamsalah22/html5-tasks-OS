@@ -30,7 +30,7 @@ function endDrag(e) {
 }
 function dropped(e) {
 	e.preventDefault();
-	e.target.appendChild(document.getElementById(e.dataTransfer.getData("myimgId")));
+	bottom.appendChild(document.getElementById(e.dataTransfer.getData("myimgId")));
 	imgCount--;
 	if (imgCount < 1) {
 		topSec.innerText = "Empty";

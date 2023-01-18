@@ -41,8 +41,8 @@ details:nth-child(even) {
 	background-color: lightpink;
 }
 input[type="button"] {
-	width: 70px;
+	width: 3rem;
 	border-radius: 5px;
 	font-weight: bold;
-	padding: 10px;
+	padding: 5px;
 }

@@ -14,10 +14,10 @@ window.addEventListener("load", function () {
 	bottom.addEventListener("dragover", overDrag);
 
 	// from BOTTOM to TOP
-	// bottom.addEventListener("dragleave", leaveDrag);
-	// topSec.addEventListener("drop", dropped);
-	// topSec.addEventListener("dragenter", enterDrag);
-	// topSec.addEventListener("dragover", overDrag);
+	bottom.addEventListener("dragleave", leaveDrag);
+	topSec.addEventListener("drop", dropped);
+	topSec.addEventListener("dragenter", enterDrag);
+	topSec.addEventListener("dragover", overDrag);
 });
 
 function startDrag(e) {
@@ -28,10 +28,14 @@ function endDrag(e) {
 }
 function dropped(e) {
 	e.preventDefault();
-	bottom.appendChild(document.getElementById(e.dataTransfer.getData("myimgId")));
+	e.target.appendChild(document.getElementById(e.dataTransfer.getData("myimgId")));
 	if (topSec.childElementCount == 0) {
 		topSec.innerText = "Empty";
 		topSec.classList.add("emptysection");
+	}
+	if (bottom.childElementCount == 0) {
+		bottom.innerText = "Empty";
+		bottom.classList.add("emptysection");
 	}
 }
 

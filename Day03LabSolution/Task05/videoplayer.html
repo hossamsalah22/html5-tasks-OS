@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>Custom Video Player</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/main.js"></script>
 	</head>
@@ -29,8 +29,8 @@
 				</details>
 				<details>
 					<summary>Mute | Loop</summary>
-					<input type="checkbox" onchange="mutefun();" /> Mute <br />
-					<input type="checkbox" onchange="loopfun();" /> Loop <br />
+					<input type="checkbox" id="mute" onchange="mutefun();" /> <label for="mute">Mute</label> <br />
+					<input type="checkbox" id="loop" onchange="loopfun();" /> <label for="loop">Loop</label> <br />
 				</details>
 				<details>
 					<summary>SeekBar</summary>

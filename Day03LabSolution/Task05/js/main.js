@@ -55,7 +55,7 @@ function loopfun() {
 	}
 }
 function changeseekbar(e) {
-	myvideo.currentTime = (myvideo.duration * e.target.value) / 100;
+	myvideo.currentTime = (myvideo.duration * seekbar.value) / seekbar.max;
 }
 function forwardfun() {
 	myvideo.playbackRate++;

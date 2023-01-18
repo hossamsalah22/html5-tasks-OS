@@ -1,6 +1,15 @@
 window.addEventListener("load", function () {
 	myvideo = this.document.getElementById("myvideo");
 	playpausebtn = this.document.getElementById("playpausebtn");
+	seekbar = this.document.getElementById("seekbar");
+
+	myvideo.addEventListener("timeupdate", () => {
+		seekbar.value = (myvideo.currentTime / myvideo.duration) * seekbar.max;
+	});
+
+	seekbar.addEventListener("change", () => {
+		myvideo.currentTime = (myvideo.duration * seekbar.value) / seekbar.max;
+	});
 }); //end of load
 function playpausefun() {
 	if (myvideo.paused) {
@@ -11,6 +20,7 @@ function playpausefun() {
 		playpausebtn.value = "Play";
 	}
 }
+
 function changevideosize(e) {
 	switch (e.value) {
 		case "small":

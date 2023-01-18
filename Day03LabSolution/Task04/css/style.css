@@ -1,26 +1,36 @@
 .main-container {
 	display: flex;
-	width: 1000px;
-	height: 250px;
+	width: 80vw;
+	height: 40vh;
 	background-color: rgb(60, 89, 96);
-	margin: 80px;
-	margin-left: 160px;
-	border-radius: 20px;
+	margin: 120px auto;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 2rem;
 }
 
-section {
-	width: 900px;
-	height: 180px;
-	margin: 20px;
-	margin-left: 30px;
-	border-radius: 10px;
-	text-align: center;
-	background-color: rgb(44, 139, 154);
-	border: 1px solid rgb(255, 255, 255);
+#add,
+#mul {
+	flex: 48%;
+	border: 2px solid black;
+	border-radius: 1rem;
+	background-color: rgb(55, 128, 146);
+	padding: 1rem;
+	font-size: 20px;
+	margin: 1rem;
 }
 
-div {
-	display: flex;
-	margin-top: 30px;
-	margin-left: 10px;
+input {
+	width: 6rem;
+	height: 3rem;
+	padding: 0.5rem;
+	border: solid 2px gray;
+	border-radius: 0.5rem;
+	font-size: 20px;
+}
+
+h3 {
+	text-transform: uppercase;
+	margin-bottom: 1.3rem;
 }

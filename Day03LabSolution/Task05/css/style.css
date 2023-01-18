@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+section {
+	border: 1px solid black;
+}
+#mainwrapper {
+	display: flex;
+	width: 80vw;
+	height: 80vh;
+	padding: 1rem;
+	margin: 20px auto;
+}
+#mainwrapper > section {
+	width: 200px;
+	margin: 10px;
+}
+#videowrapper {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#controlswrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+details {
+	margin: 10px 5px;
+	border: 1px solid black;
+	font: bold 14px verdana;
+	padding: 5px;
+}
+details:nth-child(odd) {
+	background-color: lightgray;
+}
+details:nth-child(even) {
+	background-color: lightpink;
+}
+input[type="button"] {
+	width: 70px;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 10px;
+}

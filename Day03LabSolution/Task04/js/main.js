@@ -1,20 +1,20 @@
-window.addEventListener("load", function () {
-	addFirstNum = document.getElementsByTagName("input")[0];
-	addSecondNum = document.getElementsByTagName("input")[1];
-	mulFirstNum = document.getElementsByTagName("input")[2];
-	mulSecondNum = document.getElementsByTagName("input")[3];
+window.addEventListener("load", () => {
+	let additionOutput = document.querySelector("#add > output");
+	let multiplyOutput = document.querySelector("#mul > output");
 
-	addFirstNum.addEventListener("change", function () {
-		addRes.innerText = parseInt(addFirstNum.value) + parseInt(addSecondNum.value);
-	});
-	addSecondNum.addEventListener("change", function () {
-		addRes.innerText = parseInt(addFirstNum.value) + parseInt(addSecondNum.value);
+	document.querySelectorAll("#add > input").forEach((number) => {
+		number.addEventListener("change", () => {
+			let firstNumber = document.getElementById("a").value;
+			let secondNumber = document.getElementById("b").value;
+			additionOutput.value = Number(firstNumber) + Number(secondNumber);
+		});
 	});
 
-	mulFirstNum.addEventListener("change", function () {
-		mulRes.innerText = parseInt(mulFirstNum.value) * parseInt(mulSecondNum.value);
+	document.querySelectorAll("#mul > input").forEach((number) => {
+		number.addEventListener("change", () => {
+			let firstNumber = document.getElementById("c").value;
+			let secondNumber = document.getElementById("d").value;
+			multiplyOutput.value = Number(firstNumber) * Number(secondNumber);
+		});
 	});
-	mulSecondNum.addEventListener("change", function () {
-		mulRes.innerText = parseInt(mulFirstNum.value) * parseInt(mulSecondNum.value);
-	});
-}); //end of load
+});

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+		<link href="css/font-awesome.css" rel="stylesheet" />
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div id="accordion">
+					<div class="card w-50">
+						<div class="card-header">
+							<button class="btn btn-primary" data-toggle="collapse" data-target="#cardone">Cardone</button>
+						</div>
+						<div class="collapse show" id="cardone" data-parent="#accordion">
+							<div class="card-body bg-warning text-center d-flex flex-column">
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+							</div>
+							<div class="card-footer">
+								<p>footer for cardone</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card w-50">
+						<div class="card-header">
+							<button class="btn btn-primary" data-toggle="collapse" data-target="#cardtwo">Cardtwo</button>
+						</div>
+						<div class="collapse" id="cardtwo" data-parent="#accordion">
+							<div class="card-body bg-danger text-center d-flex flex-column">
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+							</div>
+							<div class="card-footer">
+								<p>footer for two</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card w-50">
+						<div class="card-header">
+							<button class="btn btn-primary" data-toggle="collapse" data-target="#cardthree">Cardthree</button>
+						</div>
+						<div class="collapse" id="cardthree" data-parent="#accordion">
+							<div class="card-body bg-info text-center d-flex flex-column">
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+								<img src="UP/1.jpg" class="rounded-circle mx-2 w-50" />
+							</div>
+							<div class="card-footer">
+								<p>footer for cardthree</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end of row-->
+		</div>
+		<!-- end of container-->
+
+		<script src="js/JQuery-3.3.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>

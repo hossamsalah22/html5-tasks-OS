@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Modal</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">login</button>
+			<div class="modal" id="mymodal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header justify-content-center">
+							<p class="modal-title">Login Form</p>
+						</div>
+						<div class="modal-body">
+							<form id="form" novalidate class="needs-validation">
+								<div class="mb-3">
+									<label for="username" class="form-label">Username</label>
+									<input type="text" class="form-control" id="username" aria-describedby="user_validate" required />
+									<!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+									<div id="user_validate" class="invalid-feedback">Please choose a username.</div>
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputPassword1" class="form-label">Password</label>
+									<input
+										type="password"
+										class="form-control"
+										id="exampleInputPassword1"
+										required
+										aria-describedby="pass_validate"
+									/>
+									<div id="pass_validate" class="invalid-feedback">Please choose a password.</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button form="form" type="submit" class="btn btn-primary">Login</button>
+							<button class="btn btn-danger" data-bs-dismiss="modal"><span class="close">cancel</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

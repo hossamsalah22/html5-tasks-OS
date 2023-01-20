@@ -24,6 +24,7 @@ function getlocation(e) {
 
 function getposition(position) {
 	//console.log(e.coords);
+	console.log(Date(arguments[0].timestamp));
 	lat = position.coords.latitude;
 	lon = position.coords.longitude;
 	accuracy = position.coords.accuracy;

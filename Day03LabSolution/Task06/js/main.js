@@ -31,6 +31,13 @@ window.addEventListener("load", function () {
 		}
 		colorbar.appendChild(createdDiv);
 	}
+
+	saveButton = this.document.getElementById("saveBtn");
+
+	saveButton.addEventListener("click", function () {
+		var dataURL = myCanvas.toDataURL("image/jpeg", 1.0);
+		saveImage(dataURL, "my-canvas.jpeg");
+	});
 }); // end of load
 
 function drawCircle(e) {
@@ -78,4 +85,11 @@ function changeColor(e) {
 	newClicked.className += " activeColor";
 	myContetx.fillStyle = newClicked.style.backgroundColor;
 	localStorage.setItem("selectedColor", newClicked.style.backgroundColor);
+}
+
+function saveImage(data, filename = "Untitled.jpeg") {
+	var a = document.createElement("a");
+	a.href = data;
+	a.download = filename;
+	a.click();
 }

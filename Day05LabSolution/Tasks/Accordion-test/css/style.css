@@ -1,0 +1,37 @@
+.container {
+	/* display: flex;
+	width: 100%; */
+	padding: 0;
+}
+.choice {
+	height: 180px;
+	box-sizing: border-box;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+	align-items: center;
+	transition: width 0.2s;
+	border-radius: 3px;
+}
+.expand {
+	width: 65%;
+}
+.unset {
+	width: 16%;
+	color: black !important;
+	background-color: #ddd !important;
+}
+.small {
+	width: 5%;
+	background-color: #ddd !important;
+}
+.small > div {
+	opacity: 0;
+}
+.unset > div > p {
+	opacity: 0;
+}
+.expand > div {
+	transition-delay: 200ms;
+	opacity: 1;
+}
